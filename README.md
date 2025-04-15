@@ -1,7 +1,8 @@
 # 📈 Forecasting Wells Fargo Stock Price Using Neural Networks
 
 This project focuses on forecasting the stock price of Wells Fargo (WFC) using deep learning techniques, specifically LSTM (Long Short-Term Memory) neural networks. The objective is to build a predictive model that captures the temporal dependencies in financial time series data to estimate future stock prices.
-🔍 Project Overview
+
+## 🔍 Project Overview
 
     Goal: Forecast Wells Fargo (WFC) stock prices using historical stock data and neural network models.
 
@@ -17,7 +18,7 @@ This project focuses on forecasting the stock price of Wells Fargo (WFC) using d
 
     Outcome: A trained LSTM model capable of predicting future WFC stock price trends with reasonable accuracy.
 
-# 🧠 Technologies Used
+## 🧠 Technologies Used
 
     Python 🐍
 
@@ -33,7 +34,7 @@ This project focuses on forecasting the stock price of Wells Fargo (WFC) using d
 
     Yahoo Finance API (via yfinance) 💹
 
-# 📊 Dataset
+## 📊 Dataset
 
     Source: Yahoo Finance
 
@@ -43,7 +44,7 @@ This project focuses on forecasting the stock price of Wells Fargo (WFC) using d
 
     Timeframe: Varies depending on current date and model scope
 
-# 🔧 Model Architecture
+## 🔧 Model Architecture
 
     Input Layer: Sequence of past stock prices
 
@@ -55,7 +56,7 @@ This project focuses on forecasting the stock price of Wells Fargo (WFC) using d
 
     Optimizer: Adam
 
-# 📈 Results
+## 📈 Results
 
     Visual comparison between actual and predicted stock prices
 
