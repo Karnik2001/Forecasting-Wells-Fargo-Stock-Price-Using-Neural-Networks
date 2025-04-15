@@ -1,84 +1,62 @@
-# 📈 Forecasting Wells Fargo Stock Price Using Neural Networks & Machine Learning
+# 📈 Forecasting Wells Fargo Stock Price Using Neural Networks
 
-This project applies classical machine learning algorithms and deep learning (LSTM) to predict the directional movement of **Wells Fargo & Co. (WFC)** stock price. The objective is to forecast whether the stock will close higher the next day using historical price data and engineered features.
+This project focuses on forecasting the stock price of Wells Fargo (WFC) using deep learning techniques, specifically LSTM (Long Short-Term Memory) neural networks. The objective is to build a predictive model that captures the temporal dependencies in financial time series data to estimate future stock prices.
+🔍 Project Overview
 
----
+    Goal: Forecast Wells Fargo (WFC) stock prices using historical stock data and neural network models.
 
-## 📌 Table of Contents
+    Methodology:
 
-- [Overview](#overview)
-- [Data Collection](#data-collection)
-- [EDA & Feature Engineering](#eda--feature-engineering)
-- [Models Implemented](#models-implemented)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Key Results](#key-results)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Future Work](#future-work)
-- [License](#license)
+        Data preprocessing and visualization
 
----
+        Feature scaling
 
-## 🧠 Overview
+        Building an LSTM model using TensorFlow/Keras
 
-The goal is to build a predictive model that can classify whether Wells Fargo's stock price will **go up (1)** or **go down/stay the same (0)** the following day based on engineered features and time series trends. The project compares traditional ML classifiers with an LSTM model to evaluate performance on sequential financial data.
+        Model training and evaluation
 
----
+    Outcome: A trained LSTM model capable of predicting future WFC stock price trends with reasonable accuracy.
 
-## 📥 Data Collection
+# 🧠 Technologies Used
 
-- Data Source: [Yahoo Finance](https://finance.yahoo.com/)
-- Collected using: `yfinance` Python package
-- Data Range: 5 years of historical daily data
-- Features extracted: Open, High, Low, Close, Volume, and Date
+    Python 🐍
 
----
+    Jupyter Notebook 📓
 
-## 📊 EDA & Feature Engineering
+    TensorFlow & Keras 🤖
 
-- Visualizations of stock prices and volatility trends using Matplotlib and Seaborn
-- Key engineered features:
-  - `open-close`: Daily price change
-  - `low-high`: Daily volatility
-  - `quarter`: Binary indicator for end-of-quarter trading
-  - `target`: Binary label for stock price increase the next day
+    Numpy & Pandas 📊
 
----
+    Scikit-learn 🧮
 
-## 🤖 Models Implemented
+    Matplotlib & Seaborn 📉
 
-### Classical Machine Learning
-- Logistic Regression
-- Support Vector Machine (SVC with Polynomial Kernel)
-- XGBoost Classifier
+    Yahoo Finance API (via yfinance) 💹
 
-### Deep Learning
-- LSTM (Long Short-Term Memory) Neural Network  
-  - Built using Keras and TensorFlow  
-  - Input structured with sliding time windows  
-  - Trained using binary cross-entropy loss
+# 📊 Dataset
 
----
+    Source: Yahoo Finance
 
-## 📈 Evaluation Metrics
+    Ticker: WFC (Wells Fargo & Company)
 
-All models were evaluated using:
-- ROC-AUC Score
-- Classification Accuracy
-- Confusion Matrix (for insights into false positives/negatives)
+    Fields Used: Open, High, Low, Close, Volume, and Date
 
----
+    Timeframe: Varies depending on current date and model scope
 
-## ✅ Key Results
+# 🔧 Model Architecture
 
-- **XGBoost** achieved the highest performance among classical models.
-- **LSTM outperformed all others** by capturing temporal dependencies in price sequences.
-- Engineered features like `open-close` and `quarter` were influential predictors.
+    Input Layer: Sequence of past stock prices
 
----
+    LSTM Layer: Captures temporal dependencies
 
-## 🛠️ Technologies Used
+    Dense Layer: Outputs predicted stock price
 
-- **Languages:** Python
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, Keras, TensorFlow, yfinance
+    Loss Function: Mean Squared Error (MSE)
+
+    Optimizer: Adam
+
+# 📈 Results
+
+    Visual comparison between actual and predicted stock prices
+
+    Loss curve showing convergence of the LSTM model
