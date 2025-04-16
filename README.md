@@ -61,3 +61,9 @@ This project focuses on forecasting the stock price of Wells Fargo (WFC) using d
     Visual comparison between actual and predicted stock prices
 
     Loss curve showing convergence of the LSTM model
+
+## Citations
+
+https://thecleverprogrammer.com/2020/08/11/lstm-in-machine-learning/
+
+https://www.geeksforgeeks.org/stock-price-prediction-using-machine-learning-in-python/
