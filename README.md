@@ -67,3 +67,5 @@ This project focuses on forecasting the stock price of Wells Fargo (WFC) using d
 https://thecleverprogrammer.com/2020/08/11/lstm-in-machine-learning/
 
 https://www.geeksforgeeks.org/stock-price-prediction-using-machine-learning-in-python/
+
+https://www.enjoyalgorithms.com/blog/forecasting-stock-market-price-using-ann
